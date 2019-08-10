@@ -2,9 +2,13 @@
 
 ## Install Rust
 
-1. Visit [Rustup home page](https://rustup.rs/). Run the recommended command in terminal.
-2. Log out and log in again.
-3. Open terminal and try it out:
+1. Install C/C++ build prerequisites and curl. On Ubuntu, use this command in terminal:
+```
+sudo apt install build-essential curl
+```
+2. Visit [Rustup home page](https://rustup.rs/). Run the recommended command in terminal.
+3. Log out and log in again.
+4. Open terminal and try it out:
 
 ```
 cargo new sandbox # make a new Cargo project named "sandbox"
