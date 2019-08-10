@@ -31,3 +31,28 @@ because, as mentioned in the basics,
 a string literal like `"Justinas"` is of a different type, spelled `&str`.
 Let's just put up with this annoyance for now.
 
+`mut`, applied to structs:
+
+```rust
+struct Person {
+    first_name: String,
+    last_name: String,
+    knows_rust: bool,
+}
+
+fn main() {
+    let mut me = Person {
+        first_name: String::from("Justinas"),
+        last_name: String::from("Stankevičius"),
+        knows_rust: false,
+    };
+
+    // learn some Rust
+    me.knows_rust = true;
+
+    if me.knows_rust {
+        println!("Wow, good job!");
+    }
+}
+```
+
