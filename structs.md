@@ -11,7 +11,8 @@ struct Person {
 
 fn main() {
     // All the fields must be initialized.
-    // Can not create a person with no last name or no year of birth.
+    // Can not create a person with no last name
+    // or an unspecified Rust knowledge level :)
     let me = Person {
         first_name: String::from("Justinas"),
         last_name: String::from("Stankevičius"),
