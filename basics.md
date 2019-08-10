@@ -1,3 +1,5 @@
+# Basics of Rust
+
 ## A minimal program
 
 ```rust
