@@ -6,6 +6,10 @@
 ```
 sudo apt install build-essential curl
 ```
+
+For other distributions, look for C compiler (gcc).
+If you compiled C programs on your machine at least once, it should already be installed.
+
 2. Visit [Rustup home page](https://rustup.rs/). Run the recommended command in terminal.
 3. Log out and log in again.
 4. Open terminal and try it out:
