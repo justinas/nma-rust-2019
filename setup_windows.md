@@ -43,15 +43,21 @@ and it should work.
 1. Relaunch VS Code. Open your project folder
    (e.g. `C:\Users\Justinas\sandbox`).
    Open `src/main.rs`.
-   If it's the first time, you might get a notification asking if you'd like to install RLS (Rust Language Server). Choose "Yes".
+   If it's the first time, you might get a notification
+   asking if you'd like to install RLS (Rust Language Server). Choose "Yes".
 2. Press Ctrl+Shift+P to open the command bar.
    Search for "Configure Default Build Task" and choose it,
    then choose "Rust: cargo build".
 3. A file called `.vscode/tasks.json` will open.
    Add a configuration parameter `"label": "build"` in the task specification. We will need this later.
-4. Press F5 (this tries to run the program). However, since this is the first time, it will ask us to make a configuration. Choose "C++ (Windows)".
+   
+   ![](images/tasksjson.png)
+4. Press F5 (this tries to run the program).
+   However, since this is the first time, it will ask us to make a configuration. Choose "C++ (Windows)".
 5. A file called ".vscode/launch.json" will open.
    1. Change the key `"program"` to have the value of `"${workspaceFolder}/target/debug/sandbox.exe"` (replace "sandbox" with your project name if you named it differently).
    2. Add a key `"preLaunchTask": "build"`. This will make sure our program is recompiled before starting it.
-   3. Add a key `"internalConsoleOptions": "openOnSessionStart"`. This will make sure our debug console is focused when we run the program.
+   3. Add a key `"internalConsoleOptions": "openOnSessionStart"`.
+      This will make sure our debug console is focused when we run the program.
+   ![](images/launchjson.png)
 6. Press F5 to run the program!
