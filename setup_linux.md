@@ -3,7 +3,8 @@
 ## Install Rust
 
 1. Visit [Rustup home page](https://rustup.rs/). Run the recommended command in terminal.
-2. Re-open terminal and try it out:
+2. Log out and log in again.
+3. Open terminal and try it out:
 
 ```
 cargo new sandbox # make a new Cargo project named "sandbox"
