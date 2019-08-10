@@ -6,7 +6,6 @@ A Rust struct is similar to a struct in C.
 struct Person {
     first_name: String,
     last_name: String,
-    year_born: u16,
     knows_rust: bool,
 }
 
@@ -16,7 +15,6 @@ fn main() {
     let me = Person {
         first_name: String::from("Justinas"),
         last_name: String::from("Stankevičius"),
-        year_born: 1995,
         knows_rust: true,
     };
 
