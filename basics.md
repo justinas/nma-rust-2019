@@ -62,7 +62,7 @@ Basic types:
     * `&String` will "magically" convert into `&str` when passing to functions, etc.
     * A string literal like `"John Smith"` is a `&str`, not a `String`.
   * Use `String` for most other cases.
-* `char` - a unicode codepoint, e.g. `'A'`, `'Ž'` or even. `'👌'` (yep!).
+* `char` - a unicode codepoint, e.g. `'A'`, `'Ž'` `'錆'` or even. `'👌'` (yep!).
   Not a single byte like in C.
 
 ## Functions
