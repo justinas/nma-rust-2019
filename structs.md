@@ -56,3 +56,5 @@ fn main() {
     }
 }
 ```
+
+See also: [make your type printable](tips.md#make-your-type-printable).
