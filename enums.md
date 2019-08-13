@@ -83,10 +83,11 @@ fn main() {
         customer_name: String::from("Antanas"),
         delivery: DeliveryOption::TerminalPickup(339),
     };
-    let order2 = Order {
+    let mut order2 = Order {
         customer_name: String::from("Beata"),
-        delivery: DeliveryOption::HomeDelivery(String::from("Liepų 1, Vilnius")),
+        delivery: DeliveryOption::StorePickup,
     };
+    order2.delivery = DeliveryOption::HomeDelivery(String::from("Liepų 1, Vilnius")); // changed her mind
     print_order(order1);
     print_order(order2);
 }
