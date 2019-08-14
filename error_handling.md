@@ -197,3 +197,25 @@ Try:
    It will instead fail earlier: on line 4.
 2. Replacing `Cargo.toml` with a name of a file that actually contains a single integer.
    The program will finish successfully!
+
+---
+
+`String` actually implements the `Error` interface,
+so you do not *have* to create your own Error types:
+
+```rust
+fn safe_divide(a: i64, b: i64) -> Result<i64, String> {
+    match a {
+        0 => Err(format!("Tried to divide {} by zero", a)),
+        _ => Ok(a/b),
+    }
+}
+
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let result = safe_divide(1, 0)?;
+    println!("Successfully divided and got: {}", result);
+    Ok(())
+}
+```
+
+Pretty neat, huh?
