@@ -7,7 +7,7 @@ Vector or `Vec` is a dynamic array, just as in C++.
 fn main() {
     let names = vec!["Antanas", "Beata", "Cezaris", "Daiva", "Ernestas"];
     println!("{}", names[1]); // You can index a vector
-    println!("{:?}", names[2..4]); // You can slice a vector using ranges
+    println!("{:?}", &names[2..4]); // You can slice a vector using ranges
 }
 ```
 
